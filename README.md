@@ -20,7 +20,8 @@ VB.NET:
         For i As Integer = 0 To 1000 - 1
             Console.WriteLine(idworker.nextId())
         Next
-'''
+```
+<a name="xml"/> 
 C#:
 ```xml
             IdWorker idworker = new IdWorker(1);
@@ -28,4 +29,5 @@ C#:
             {
                 Console.WriteLine(idworker.nextId());
             }
-'''
+```
+<a name="xml"/> 
