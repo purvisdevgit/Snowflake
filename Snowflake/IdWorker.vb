@@ -8,7 +8,7 @@
     Private Shared sequenceBits As Integer = 10 '计数器字节数，10个字节用来保存计数码
     Private Shared workerIdShift As Integer = sequenceBits '机器码数据左移位数，就是后面计数器占用的位数
     Private Shared timestampLeftShift As Integer = sequenceBits + workerIdBits '时间戳左移动位数就是机器码和计数器总字节数
-    Public Shared sequenceMask As Long = -1L Xor -1L << sequenceBits '一微秒内可以产生计数，如果达到该值则等到下一微妙在进行生成
+    Public Shared sequenceMask As Long = -1L Xor -1L << sequenceBits '一微秒内可以产生计数，如果达到该值则等到下一微秒在进行生成
     Private Shared lastTimestamp As Long = -1L
     ''' <summary>
     ''' 机器码
@@ -26,10 +26,10 @@
         SyncLock Me
             Dim timestamp As Long = timeGen()
             If lastTimestamp = timestamp Then
-                '同一微妙中生成ID
+                '同一微秒中生成ID
                 IdWorker.sequence = (IdWorker.sequence + 1) And IdWorker.sequenceMask '用&运算计算该微秒内产生的计数是否已经到达上限
                 If IdWorker.sequence = 0 Then
-                    '一微妙内产生的ID计数已达上限，等待下一微妙
+                    '一微秒内产生的ID计数已达上限，等待下一微秒
                     timestamp = tillNextMillis(lastTimestamp)
                 End If
             Else
