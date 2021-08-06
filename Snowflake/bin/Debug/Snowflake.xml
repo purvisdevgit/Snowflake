@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Snowflake
+</name>
+</assembly>
+<members>
+<member name="T:Snowflake.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Snowflake.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Snowflake.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Snowflake.IdWorker.#ctor(System.Int64)">
+ <summary>
+ 机器码
+ </summary>
+ <param name="workerId"></param>
+</member>
+<member name="M:Snowflake.IdWorker.nextId">
+ <summary>
+ 雪花❄算法构建ID
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Snowflake.IdWorker.tillNextMillis(System.Int64)">
+ <summary>
+ 获取下一微秒时间戳
+ </summary>
+ <param name="lastTimestamp"></param>
+ <returns></returns>
+</member>
+<member name="M:Snowflake.IdWorker.timeGen">
+ <summary>
+ 生成当前时间戳
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

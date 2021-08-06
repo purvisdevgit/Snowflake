@@ -1,0 +1,11 @@
+D:\DemoSource\Snowflake\Snowflake\bin\Debug\Snowflake.exe.config
+D:\DemoSource\Snowflake\Snowflake\bin\Debug\Snowflake.exe
+D:\DemoSource\Snowflake\Snowflake\bin\Debug\Snowflake.pdb
+D:\DemoSource\Snowflake\Snowflake\bin\Debug\Snowflake.xml
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.vbproj.AssemblyReference.cache
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.Resources.resources
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.vbproj.GenerateResource.cache
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.vbproj.CoreCompileInputs.cache
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.exe
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.xml
+D:\DemoSource\Snowflake\Snowflake\obj\Debug\Snowflake.pdb
