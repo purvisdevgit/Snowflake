@@ -15,17 +15,17 @@ snowflake生成的ID整体上按照时间自增排序，并且整个分布式系
 ## 主逻辑代码在：IdWorker类中
 ## 调用方法：
 VB.NET:
-'''
+* `
         Dim idworker As IdWorker = New IdWorker(1)
         For i As Integer = 0 To 1000 - 1
             Console.WriteLine(idworker.nextId())
         Next
-'''
+'
 C#:
-'''
+* `
             IdWorker idworker = new IdWorker(1);
             for (int i = 0; i < 1000; i++)
             {
                 Console.WriteLine(idworker.nextId());
             }
-'''
+'
